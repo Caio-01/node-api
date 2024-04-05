@@ -1,0 +1,35 @@
+POST http://localhost:3333/events
+Content-Type: application/json
+
+{
+    "title": 222,
+    "details": null ,
+    "maximumAttendees": 1
+}
+
+###
+
+POST http://localhost:3333/events/d230c8d2-1d26-4e40-9433-a45c5de17ca9/attendees
+Content-Type: application/json
+
+{
+    "name": "Caio Santos",
+    "email": "cla2@gmail.com"
+}
+
+
+###
+
+GET http://localhost:3333/events/d230c8d2-1d26-4e40-9433-a45c5de17ca9
+
+###
+
+GET http://localhost:3333/attendees/1/badge
+
+###
+
+GET http://localhost:3333/attendees/4/check-in
+
+###
+
+GET http://localhost:3333/events/d230c8d2-1d26-4e40-9433-a45c5de17ca9/attendees?query=caio
