@@ -47,17 +47,37 @@ Este projeto utiliza as seguintes tecnologias:
 
 ## Anotações da Aula 📝
 
-#### Principais informações para criação de uma API:
+### Criação de uma API: Principais Informações💡🔍:
 
-- Métodos HTTP: GET, POST, PUT, DELETE, PATCH, HEAD, OPTIONS, ...
+### Métodos HTTP
 
-- Corpo da requisição (Request Body) utiliza com rotas do tipo POST e PUT
+- **GET**: Utilizado para obter informações de recursos.
+- **POST**: Utilizado para criar novos recursos.
+- **PUT**: Utilizado para atualizar recursos existentes.
+- **DELETE**: Utilizado para remover recursos.
+- **PATCH**: Utilizado para fazer atualizações parciais em recursos.
+- **HEAD**: Similar ao GET, mas retorna apenas os cabeçalhos da resposta.
+- **OPTIONS**: Utilizado para obter informações sobre os métodos suportados pelo servidor.
 
-- Parâmetros de busca (Search Params / Query Params) `http://localhost:3333/users?name=Caio`
+### Corpo da Requisição (Request Body)
 
-- Parâmetros de rota (Route Params) -> Identificação de recursos `DELETE http://localhost:3333/users/1`
+- O corpo da requisição é utilizado com rotas do tipo **POST** e **PUT**.
+- Ele contém os dados que serão enviados para o servidor, como informações de criação ou atualização de recursos.
 
-- Cabeçalhos (Headers) -> Contexto
+### Parâmetros de Busca (Search Params / Query Params)
+
+- Os parâmetros de busca são utilizados para filtrar resultados em consultas.
+- Por exemplo: `http://localhost:3333/users?name=Caio` busca usuários com o nome "Caio".
+
+### Parâmetros de Rota (Route Params)
+
+- Os parâmetros de rota são utilizados para identificar recursos específicos.
+- Por exemplo: `DELETE http://localhost:3333/users/1` remove o usuário com o ID 1.
+
+### Cabeçalhos (Headers)
+
+- Os cabeçalhos fornecem contexto adicional para a requisição.
+- Eles podem conter informações como autenticação, tipo de conteúdo, idioma, etc.
 
 
 ## Links 🔗
